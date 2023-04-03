@@ -1,0 +1,20 @@
+Docker Commands
+
+Create:
+docker build -t thejakam/testing-docker .
+
+Check for existing Images:
+docker images
+
+Pushing to Docker Hub
+docker push thejakam/testing-docker:latest
+
+Removing an image:
+docker image rm -f thejakam/testing-docker:latest
+
+Pulling from Docker Hub
+docker pull thejakam/testing-docker:latest
+
+Running Docker Image in Ditached mode
+docker run -d -p 5000:5000 thejakam/testing-docker:latest
+
